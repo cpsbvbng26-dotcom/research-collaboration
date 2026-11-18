@@ -14,6 +14,8 @@
    `SECURITY.md`・`.github/ISSUE_TEMPLATE/error-report.yml`・`.github/checked-intake/verify.js`・
    `.github/workflows/checked-intake.yml` は cpsbvbng26-dotcom の正本の一字一句同じ写しで、ここでは直さない。
    正本を直して写す。写しの sha256 は `verification/copies.json` にあり、検査が照らす。
+   `.github/workflows/empty-issue.yml`（本文の空の issue に答える仕事、2026-11-19）も正本の一字一句同じ写しで、ここでは直さない。
+   cpsbvbng26-dotcom の `check_ecosystem.js`（13f）が写しを照らす。閉じず、鍵も掛けず、消さない。
    `SECURITY.md` と `error-report.yml` が指す宛先は、運営者のほかのリポジトリと同じ既存のもので、ここで作ったものではない。
 3. **運営者のほかの創作の場の名を書かない。所属も大学の名も書かない。自称の肩書きを書かない**。
    使わない語は `verification/check.js` の表にある。場の名と大学の名は符号にして置いてある。書き写せば、この文書自身が検査に掛かる。
