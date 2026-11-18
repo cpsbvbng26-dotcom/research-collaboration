@@ -1,0 +1,101 @@
+{
+  "_": [
+    "規程の約束の文。ここにある文が、そのファイルに一字一句そのままなければ、verification/check.js が落ちる。弱めるときは、ここも変えることになり、差分に残る。"
+  ],
+  "files": {
+    "README.md": [
+      "料金は取らず、対価も払いません。",
+      "この協力は、雇用ではありません。",
+      "Claude は著者ではありません。"
+    ],
+    "README.en.md": [
+      "No fee is charged, and no consideration is paid.",
+      "The collaboration is not employment.",
+      "Claude is not an author."
+    ],
+    "policies/terms.md": [
+      "運営者は、協力する人から料金を取りません。",
+      "運営者は、協力する人に、賃金も謝礼も、ほかのどんな対価も払いません。",
+      "この協力は、雇用ではありません。",
+      "運営者は、誰とも労働契約を結びません。",
+      "どちらの側も、いつでも、理由を言わずにやめられます。",
+      "運営者は、掲載料や投稿料を取る場には、協力の成果を出しません。",
+      "- 人を対象とする研究。運営者には、倫理審査を受ける道がないためです。",
+      "- 16 歳未満の人からの申し出。",
+      "この条件のどの定めも、法令が免除や制限を認めない責任を、免除したり制限したりしません。"
+    ],
+    "policies/terms.en.md": [
+      "The operator charges no fee to anyone who collaborates.",
+      "The operator pays no wages, no honorarium and no other consideration to anyone who collaborates.",
+      "The collaboration is not employment.",
+      "The operator concludes no labour contract with anyone.",
+      "Either side may stop at any time without giving a reason.",
+      "The operator does not send the results of a collaboration to a venue that charges publication or submission fees.",
+      "- Research involving human participants. The operator has no route to an ethics review.",
+      "- Proposals from a person under 16 years of age.",
+      "Nothing in these terms excludes or limits a liability that the law does not allow to be excluded or limited."
+    ],
+    "policies/authorship.md": [
+      "Claude は著者ではありません。",
+      "Claude は役割の一覧にも入りません。",
+      "開示は消しません。",
+      "運営者は、本名を求めません。"
+    ],
+    "policies/authorship.en.md": [
+      "Claude is not an author.",
+      "Claude is not in the list of roles either.",
+      "The disclosure is never removed.",
+      "The operator does not ask for a real name."
+    ],
+    "policies/privacy.md": [
+      "本名・住所・所属・連絡先は求めません。",
+      "印は任意です。",
+      "issue のコメントは、言語モデルに渡しません。",
+      "16 歳未満の人からの申し出は受けません。",
+      "運営者は、上のほかに、個人データを第三者に渡しません。"
+    ],
+    "policies/privacy.en.md": [
+      "It does not ask for a real name, an address, an affiliation or contact details.",
+      "The box is optional.",
+      "Comments on issues are not given to a language model.",
+      "No proposal is accepted from a person under 16 years of age.",
+      "The operator gives personal data to no other third party."
+    ],
+    "policies/disclaimer.md": [
+      "このリポジトリの頁は、法的な助言ではありません。",
+      "医学や心理学や生物学に触れる主題でも、診断や治療についての主張は出しません。",
+      "どの大学、会社、学会、出版者にも属さず、それらを代表しません。",
+      "Claude は、このリポジトリの著者でも、協力の成果の著者でもありません。"
+    ],
+    "policies/disclaimer.en.md": [
+      "The pages of this repository are not legal advice.",
+      "Even on themes that touch medicine, psychology or biology, no claim about diagnosis or treatment is published.",
+      "It belongs to no university, company, society or publisher, and represents none.",
+      "Claude is not an author of this repository, nor of the results of any collaboration."
+    ],
+    "policies/law.md": [
+      "法的な助言でも保証でもありません。",
+      "弁護士の確認は受けていません。"
+    ],
+    "policies/law.en.md": [
+      "It is not legal advice and gives no guarantee.",
+      "No lawyer has reviewed it."
+    ],
+    "policies/requests.md": [
+      "費用はかかりません。",
+      "名の示し方の変更と、名を外すことには、理由を問わず応じます。"
+    ],
+    "policies/requests.en.md": [
+      "There is no fee.",
+      "A change in how a name is shown, or the removal of a name, is made whatever the reason."
+    ],
+    "policies/licences.md": [
+      "協力の成果のうち、文と論文は CC BY 4.0 で出します。",
+      "コードは MIT ライセンスで出します。"
+    ],
+    "policies/licences.en.md": [
+      "Text and papers that result from a collaboration are published under CC BY 4.0.",
+      "Code is published under the MIT License."
+    ]
+  }
+}

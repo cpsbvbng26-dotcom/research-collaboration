@@ -1,0 +1,56 @@
+{
+  "_": [
+    "散文に書いた数の台帳（決めごと 7）。verification/check.js は、README・TOPICS・policies と、このリポジトリのために作った様式の文から数を拾い、どれかの照らし方に当たらなければ落ちる。",
+    "日付は dates に載せた日だけを通す。条は verification/statutes.json にある条だけを通す。規約の節は statutes.json の sections だけを通す。",
+    "fixed は、決めた値。それぞれ、値を確かめる所（check）を持つ。rule は、cpsbvbng26-dotcom の CLAUDE.md の決めごとの番号と、その初めの文。cpsbvbng26-dotcom の check_ecosystem.js が、その番号の決めごとがその文で始まることを照らす。"
+  ],
+  "dates": {
+    "2026-11-18": "このリポジトリを置き、条文を取り寄せた日。予想の (a) と (b) を証明した日（trinity-operator の OPEN-PROBLEM.md）"
+  },
+  "fixed": [
+    {
+      "re": "16 歳",
+      "en": "16 years",
+      "check": "age-min",
+      "why": "申し出を受ける年齢の下限。Sophaxis と同じ線"
+    },
+    {
+      "re": "18 歳",
+      "en": "18 years",
+      "check": "age-adult",
+      "why": "民法第4条の成年。取り寄せた文に「十八歳」がある"
+    },
+    {
+      "re": "7 日",
+      "en": "7 days",
+      "check": "days",
+      "why": "求めに答えるまでの目安"
+    },
+    {
+      "re": "CC BY 4\\.0",
+      "en": "CC BY 4\\.0",
+      "check": "licence",
+      "why": "LICENSE の版"
+    },
+    {
+      "re": "0009-0000-1406-0547",
+      "en": "0009-0000-1406-0547",
+      "check": "orcid",
+      "why": "運営者の ORCID iD"
+    },
+    {
+      "re": "3 回",
+      "en": "3 times",
+      "check": "rule18",
+      "why": "CLAUDE.md の決めごと 14（cpsbvbng26-dotcom の決めごと 18）の、確かめる回数"
+    }
+  ],
+  "rule": {
+    "re": "決めごと 15",
+    "en": "rule 15",
+    "repo": "cpsbvbng26-dotcom",
+    "file": "CLAUDE.md",
+    "number": 15,
+    "begins": "**独学の成果は、学部一年次までのものとする。**"
+  }
+}

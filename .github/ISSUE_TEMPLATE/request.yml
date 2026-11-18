@@ -1,0 +1,59 @@
+name: 削除・訂正・開示の求め / Requests
+description: 自分についての記載の訂正や削除、開示、名の示し方の変更、同意の撤回などを求める。無償 / Ask for correction, removal, disclosure, a change of how a name is shown, withdrawal of consent and the like. No fee
+title: "求め: "
+labels: ["求め"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この issue は公開されます。問題の個人情報そのものは書き写さず、どこにあるかだけを書く形にしています。
+        公開の場で書けない事情があるときは、種類で「非公開の連絡を求める」を選び、ほかの欄は空のまま出します。運営者が非公開で答えるのは、自分の GitHub のプロフィールに連絡先を公開している人にだけです。連絡先が無い人も、自分のプロフィールに連絡先を一時的に公開すれば、そこで答えを受け取れます。公開しないときは、個人の事柄を書かずに、この issue で答えます。
+        書いたものは、この求めに応じることにだけ使います。扱いは個人情報の取り扱いにあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.md
+        費用はかかりません。手順は削除・訂正・開示の求めにあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/requests.md
+        This issue is public. The form asks that the personal data itself not be copied, only where it is.
+        When there is a reason not to write in public, the kind "Ask for a private answer" is chosen and the other fields are left empty. The operator answers privately only to a contact made public on the requester's own GitHub profile. A person with no such contact can receive the answer by making a contact public on their own profile for a while. Otherwise, the answer is given in this issue, without personal details.
+        What is written is used only to answer this request. The handling is in Personal data. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.en.md
+        There is no fee. The procedure is in Requests. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/requests.en.md
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 求めの種類 / Kind of request
+      options:
+        - 自分についての記載の訂正・削除 / Correction or removal of an entry about oneself
+        - 名の示し方の変更・名を外すこと / A change of how a name is shown, or its removal
+        - 保有個人データの利用目的の通知・開示・訂正・追加・削除・利用停止・消去・第三者への提供の停止 / Notification of purpose, disclosure, correction, addition, deletion, stop of use, erasure, or stop of provision to third parties, of retained personal data
+        - 自分の個人情報の削除 / Removal of one's personal data
+        - 自分の名誉や信用を傷つける内容の削除 / Removal of content that harms one's reputation or credibility
+        - 自分の権利を侵す内容の削除 / Removal of content that infringes one's rights
+        - 言語モデルに渡すことへの同意の撤回 / Withdrawal of consent to giving an issue to a language model
+        - 行動の決まりに反する振る舞いの知らせ / Report of conduct against the code of conduct
+        - 運営者の住所を知ること / The operator's address
+        - 非公開の連絡を求める / Ask for a private answer
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: どこにあるか / Where
+      description: issue の番号、ファイルの名と行。個人情報そのものは書かない形にしています / An issue number, or a file name and line. The personal data itself is not written
+    validations:
+      required: false
+  - type: textarea
+    id: what
+    attributes:
+      label: 何を求めるか / What is asked
+      description: 短くてかまいません。名の示し方の変更と名を外すことに、理由は要りません / Short is fine. No reason is needed for a change of how a name is shown or its removal
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 言語モデルに渡ること（任意） / Use of a language model (optional)
+      description: |
+        運営者は、このリポジトリの作業を Claude Code で行います。欄に印があれば、この issue の題と本文は、求めを扱う手助けのために、Anthropic（米国）の言語モデル Claude に渡ることがあります。運営者は、これを個人情報保護法第28条の外国にある第三者への提供として扱います。米国の制度と Anthropic の措置は、免責事項の「issue の中身と言語モデル」の節にあります。https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.md
+        印は任意です。印が無ければ、運営者は、Claude にもほかの言語モデルにも渡さずに求めを扱います。印が無くても、求めの扱いは変わりません。この issue のコメントは、言語モデルに渡しません。同意は、この issue で、いつでも撤回できます。
+        The operator works on this repository with Claude Code. If the box is ticked, the title and text of this issue may be given to Claude, the language model of Anthropic (United States), to help handle the request. The operator treats this as a provision of personal data to a third party in a foreign country under Article 28 of Japan's Act on the Protection of Personal Information. The system of the United States and Anthropic's measures are in the section "Issues and the language model" of the disclaimer. https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.en.md
+        The box is optional. Without it, the operator handles the request without giving it to Claude or any other language model, and the request is handled in the same way. Comments on this issue are not given to a language model. The consent can be withdrawn at any time in this issue.
+      options:
+        - label: この issue の題と本文を、運営者が Claude（Anthropic、米国）に渡すことに同意します。 / I consent to the operator giving the title and text of this issue to Claude (Anthropic, United States).
+          required: false

@@ -1,0 +1,190 @@
+{
+  "_": [
+    "規程が引く日本の条文と、規程が名を挙げる GitHub の規約。条文は e-Gov 法令 API（https://laws.e-gov.go.jp/api/1/articles;lawId=<番号>;article=<条>）から取り寄せたものだけを、tools/statutes.js が verification/statutes-texts.json に写す。写す文は、ルビと札を落とし、空白を一つにまとめたもので、Sophaxis の取り寄せと同じ取り方である。sha256 はその文の UTF-8 の SHA-256。",
+    "法令の番号は、運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json に記されたものを使い、労働基準法と労働契約法は e-Gov 法令 API の法令の一覧から取った。記憶から書いた番号は無い。",
+    "規程に「」で引いた条文の句は、verification/check.js が、ここに写した文にそのまま現れることを確かめる。ここに無い条を規程に挙げると、同じ検査が落ちる。",
+    "GitHub の規約は、github/site-policy の、そのファイルに触れた最後のコミットと、規程が引く英語の句を記す。週に一度、statutes.yml が両方を取り寄せて比べる。"
+  ],
+  "fetched": "2026-11-18",
+  "statutes": [
+    {
+      "law": "個人情報保護法",
+      "label": "第17条",
+      "law_id": "415AC0000000057",
+      "article": "17",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "caee832efb96d091b741777eb3957718f4a6053b38ec0827ad01f00e68c65ee0"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第18条",
+      "law_id": "415AC0000000057",
+      "article": "18",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "aade43883ec2c28d6e1e43faf70f1eee83b078faff45b40826b6ac307604a7f5"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第20条",
+      "law_id": "415AC0000000057",
+      "article": "20",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "2f45b4c2bbd6f34eefd15437e3bd333e8176482f17915b11e12ea6c698079470"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第21条",
+      "law_id": "415AC0000000057",
+      "article": "21",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "31a2d9bedd9c8222212b10aed08b2fe870b81f01ac4366fc716a4369953e670d"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第26条",
+      "law_id": "415AC0000000057",
+      "article": "26",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "0041eb921b70c7b6f0581b376ec5f34971c961d4fec04eb4806a6de3fde85ced"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第27条",
+      "law_id": "415AC0000000057",
+      "article": "27",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "29d30b77da9902b1f11723cf336ce06a6a320b2484da90b22c7d0498c44634d6"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第28条",
+      "law_id": "415AC0000000057",
+      "article": "28",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "2abf2c3f010636a58acd0d8575edff6e95a02ca86aa6e7b210cc99bd8f6d2589"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第32条",
+      "law_id": "415AC0000000057",
+      "article": "32",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "508ab29ca2664bc626001f3fccc2e5d3238b7c52780b74e5f08c093bf639fe95"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第33条",
+      "law_id": "415AC0000000057",
+      "article": "33",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "03e6c8cd20328cf92b01ebf29ce01699ccb0488c5515f34a6571b65b0c496f5a"
+    },
+    {
+      "law": "個人情報保護法",
+      "label": "第35条",
+      "law_id": "415AC0000000057",
+      "article": "35",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "4590ecd518049fcf8a384ca94028d4dd292e10a606cb0750ab51ed681a68c27d"
+    },
+    {
+      "law": "著作権法",
+      "label": "第2条第1項第12号",
+      "law_id": "345AC0000000048",
+      "article": "2",
+      "items": [
+        "12"
+      ],
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "5b22690d5a4bc06319fdaf68faa7cadddb087e69b84a8df2416b67745a102422"
+    },
+    {
+      "law": "著作権法",
+      "label": "第14条",
+      "law_id": "345AC0000000048",
+      "article": "14",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "e50df554a42ac055326b1d422e5ca441bb218cc2f049541ec4eaed963a5745af"
+    },
+    {
+      "law": "著作権法",
+      "label": "第59条",
+      "law_id": "345AC0000000048",
+      "article": "59",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "b39012308d8fe6f1d64160e08bc6fd0c700ba168fc64893c0af1eeda3bb2bbb8"
+    },
+    {
+      "law": "著作権法",
+      "label": "第64条",
+      "law_id": "345AC0000000048",
+      "article": "64",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "6455951b0a3a30453287596111b09cc3dedb66330fe888344fab3c6f465d22fd"
+    },
+    {
+      "law": "著作権法",
+      "label": "第65条",
+      "law_id": "345AC0000000048",
+      "article": "65",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "e2c6afed31d92085a03f0bb72de69c28762062454d19338d45f11eb991045222"
+    },
+    {
+      "law": "民法",
+      "label": "第4条",
+      "law_id": "129AC0000000089",
+      "article": "4",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "c7f84c4a803d00dcde3f1fb75e65abbe7d3f59bc483ae69bb8cd1c32f65e1fd2"
+    },
+    {
+      "law": "民法",
+      "label": "第5条",
+      "law_id": "129AC0000000089",
+      "article": "5",
+      "law_id_from": "運営者のほかのリポジトリ（sophaxis ほか）の verification/statutes.json",
+      "sha256": "4f6f3090a33137697d4742f664c6a80888ea52df11872ff947f3c4479641d2c7"
+    },
+    {
+      "law": "労働基準法",
+      "label": "第9条",
+      "law_id": "322AC0000000049",
+      "article": "9",
+      "law_id_from": "e-Gov 法令 API の法令の一覧（lawlists/2、2026-11-18 に取り寄せた）",
+      "sha256": "c4fc57f9aa28d8b5196ceaa11b70ae500810c870b285e1dca1b63ed1dc701267"
+    },
+    {
+      "law": "労働基準法",
+      "label": "第11条",
+      "law_id": "322AC0000000049",
+      "article": "11",
+      "law_id_from": "e-Gov 法令 API の法令の一覧（lawlists/2、2026-11-18 に取り寄せた）",
+      "sha256": "441222b775d2e3047fbec00bfaddd1e81afdedbe00a3d98389c9d3f793f99571"
+    },
+    {
+      "law": "労働契約法",
+      "label": "第6条",
+      "law_id": "419AC0000000128",
+      "article": "6",
+      "law_id_from": "e-Gov 法令 API の法令の一覧（lawlists/2、2026-11-18 に取り寄せた）",
+      "sha256": "9143383708adfa2d7aa1086e4d66d0ddbfd10beada80bbef6f45c88a3920ab24"
+    }
+  ],
+  "policies": [
+    {
+      "name": "GitHub Terms of Service",
+      "repo": "github/site-policy",
+      "path": "Policies/github-terms/github-terms-of-service.md",
+      "commit": "166eb97e485b7de3cd5dbaf8c8d16e4310fda46c",
+      "phrases": [
+        "You must be age 13 or older.",
+        "including by training AI Features, and for the purpose of training, developing, and improving artificial intelligence and machine learning models and technologies of our Affiliates"
+      ],
+      "sections": {
+        "B.3": "You must be age 13 or older.",
+        "D.4": "including by training AI Features, and for the purpose of training, developing, and improving artificial intelligence and machine learning models and technologies of our Affiliates"
+      }
+    }
+  ]
+}
