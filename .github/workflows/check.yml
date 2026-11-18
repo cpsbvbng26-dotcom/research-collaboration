@@ -1,0 +1,27 @@
+name: 検査
+
+# push と PR のたびに回す。規程と様式と条文の引用と数を、verification/check.js が確かめる。
+# 続けて、同じ検査を一つずつ壊し、どれも落ちることを確かめる（--break）。
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: 規程・様式・条文の引用・散文の数・壊して確かめる
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - run: node verification/check.js
+      - run: node verification/check.js --break

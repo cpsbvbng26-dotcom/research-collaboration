@@ -1,0 +1,54 @@
+name: 条文と規約の見張り
+
+# 週に一度、規程が引く条文（e-Gov 法令 API）と GitHub の利用規約（github/site-policy）を取り寄せ、
+# verification/statutes.json に記した値と比べる。違えば、決まった語だけの issue を一つ開くか直し、元に戻れば閉じる。
+# リポジトリには何も書かない。記し直すのは、PR のコミットで行う。
+# PR では比べて表示するだけ。鍵は受け取らない。
+on:
+  schedule:
+    - cron: '37 2 * * 4'
+  workflow_dispatch:
+  pull_request:
+    paths: ['tools/statutes.js', 'verification/statutes.json', '.github/workflows/statutes.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    if: github.event_name == 'pull_request'
+    name: 条文と規約が記した値と同じか（比べるだけ）
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - run: node tools/statutes.js
+  watch:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    name: 条文と規約が記した値と同じか
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: statutes
+      cancel-in-progress: false
+    # 書くのは issue だけ。
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - run: node tools/statutes.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
