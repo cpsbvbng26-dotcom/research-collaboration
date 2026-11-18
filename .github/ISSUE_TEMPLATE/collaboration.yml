@@ -1,0 +1,82 @@
+name: 共同研究の申し出 / Propose a collaboration
+description: 一緒に研究を進める申し出。料金も対価も無く、雇用ではありません / A proposal to carry out research together. No fee, no consideration, not employment
+title: "申し出: "
+labels: ["共同研究"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この issue は公開されます。本名・住所・所属・連絡先は求めず、書かない形にしています。病歴や心身の状態などの要配慮個人情報も書かない形にしています。書かれていたときは、運営者がその部分を消します。
+        書いたものは、申し出を読んで答えること、合意した協力を進めて誰が何をしたかを記すこと、求めに応じることにだけ使います。扱いは個人情報の取り扱いにあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.md
+        運営者は料金を取らず、賃金も謝礼も払いません。協力は雇用ではなく、どちらの側もいつでもやめられます。条件は協力の条件にあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/terms.md
+        人を対象とする研究と、他人の要配慮個人情報を使う研究は受けません。16 歳未満の人からの申し出は受けません。
+        This issue is public. The form does not ask for a real name, an address, an affiliation or contact details, and asks that they not be written. It also asks that special care-required personal information, such as medical history or the state of a person's body or mind, not be written. If it is written, the operator removes that part.
+        What is written is used only to read and answer the proposal, to carry out an agreed collaboration and record who did what, and to answer requests. The handling is in Personal data. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.en.md
+        The operator charges no fee and pays no wages or honorarium. The collaboration is not employment, and either side may stop at any time. The terms are in Terms of collaboration. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/terms.en.md
+        Research involving human participants, and research that uses other people's special care-required personal information, is not taken up. No proposal is accepted from a person under 16 years of age.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: 主題 / Topic
+      description: 主題は TOPICS.md にあります / The topics are in TOPICS.en.md
+      options:
+        - 黄金比の窓の予想と文献 / The golden-window conjecture and the literature
+        - 予想の証明の点検 / Checking the proofs of the conjecture
+        - Trinity-Infinity の紙面 / The Trinity-Infinity papers
+        - 研究のソフトウェアとしての点検 / Review as research software
+        - 新しい主題 / New themes
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 何を一緒に進めるか / What to carry out together
+      description: 問い、進め方、出す先の見込み / The question, the approach, and the venue in view
+    validations:
+      required: true
+  - type: textarea
+    id: role
+    attributes:
+      label: 担う役割 / Role to be played
+      description: CRediT の語で書けます。例 Formal analysis、Validation / CRediT terms may be used, such as Formal analysis or Validation
+    validations:
+      required: true
+  - type: textarea
+    id: work
+    attributes:
+      label: 公開している関連の仕事（任意） / Related public work (optional)
+      description: 公開のリンクだけ。他人の文やコードを含むときは、その出どころとライセンス / Public links only. When it contains another person's text or code, its source and licence
+    validations:
+      required: false
+  - type: textarea
+    id: models
+    attributes:
+      label: 言語モデルの使い方（任意） / Use of language models (optional)
+      description: 使うか、使ったなら何に使うか / Whether one is used, and if so what for
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 確かめること / Confirmations
+      options:
+        - label: 協力の条件、著者と貢献、ライセンス、行動の決まりを読みました。 / I have read the terms of collaboration, authorship and contributions, licences, and the code of conduct.
+          required: true
+        - label: 16 歳以上です。18 歳未満のときは、親または保護者が同意しています。 / I am 16 years of age or older, and if under 18 years of age, a parent or guardian has consented.
+          required: true
+        - label: 寄せる文は CC BY 4.0 で、コードは MIT ライセンスで寄せ、そのライセンスで出す権利を持っています。 / I contribute text under CC BY 4.0 and code under the MIT License, and hold the right to release them under those licences.
+          required: true
+        - label: 本名・住所・所属・連絡先と、要配慮個人情報を書いていません。 / I have not written a real name, an address, an affiliation, contact details, or special care-required personal information.
+          required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 言語モデルに渡ること（任意） / Use of a language model (optional)
+      description: |
+        運営者は、このリポジトリの作業を Claude Code で行います。欄に印があれば、この issue の題と本文は、申し出を扱う手助けのために、Anthropic（米国）の言語モデル Claude に渡ることがあります。運営者は、これを個人情報保護法第28条の外国にある第三者への提供として扱います。米国の制度と Anthropic の措置は、免責事項の「issue の中身と言語モデル」の節にあります。https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.md
+        印は任意です。印が無ければ、運営者は、Claude にもほかの言語モデルにも渡さずに扱います。この issue のコメントは、言語モデルに渡しません。同意は、この issue で、いつでも撤回できます。
+        The operator works on this repository with Claude Code. If the box is ticked, the title and text of this issue may be given to Claude, the language model of Anthropic (United States), to help handle the proposal. The operator treats this as a provision of personal data to a third party in a foreign country under Article 28 of Japan's Act on the Protection of Personal Information. The system of the United States and Anthropic's measures are in the section "Issues and the language model" of the disclaimer. https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.en.md
+        The box is optional. Without it, the operator handles the issue without giving it to Claude or any other language model. Comments on this issue are not given to a language model. The consent can be withdrawn at any time in this issue.
+      options:
+        - label: この issue の題と本文を、運営者が Claude（Anthropic、米国）に渡すことに同意します。 / I consent to the operator giving the title and text of this issue to Claude (Anthropic, United States).
+          required: false
