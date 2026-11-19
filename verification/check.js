@@ -329,7 +329,7 @@ check('散文の数は、どれも台帳に載り、それぞれの照らし方�
     if (x.check === 'days' && !(has('policies/requests.md', '7 日') && has('policies/requests.en.md', '7 days'))) bad.push('7 日');
     if (x.check === 'licence' && !(F.get('LICENSE') || '').startsWith('Creative Commons Attribution 4.0 International')) bad.push('LICENSE の版');
     if (x.check === 'orcid' && !ORCID_OK(x.re)) bad.push('ORCID iD の検査の数字');
-    if (x.check === 'rule18' && !(F.get('CLAUDE.md') || '').includes('**合っているかを、最低 3 回確かめる。**')) bad.push('3 回が CLAUDE.md の決めごとと違う');
+    if (x.check === 'rule18' && !(F.get('CLAUDE.md') || '').includes('2026-11-18 に利用者が 3 回と決め')) bad.push('3 回が CLAUDE.md の決めごとの記録（2026-11-18 の回数）と違う');
   }
   if (!/^\*\*/.test(N.rule.begins) || N.rule.number !== Number(N.rule.re.replace(/\D/g, ''))) bad.push('決めごとの番号と文');
   if (!(F.get('verification/statutes.json') || '').includes('"fetched": "' + Object.keys(N.dates)[0] + '"')) bad.push('取り寄せた日が台帳の日と違う');
@@ -468,8 +468,8 @@ check('CLAUDE.md が、決めごと 16・17・18 に当たる文を持つ', (F) 
   const want = ['**Claude は利用者に命令しない。** Claude には、利用者に作業を割り当てる権限が無い。',
     '**issue の中身を言語モデルに渡すのは、本人の同意がある題と本文だけにする。**',
     '`list_issues` で一覧を取らない（本文も返る）。コメントは読まない。メールの中身は扱わない。',
-    '**合っているかを、最低 3 回確かめる。** 報告・返答・コミット・PR・マージの前に、',
-    '確かめた回数とやり方は、報告に一行で書く。2026-11-18 に利用者が決めた。'];
+    '**合っているかを、最低 10 回確かめる。** 報告・返答・コミット・PR・マージの前に、',
+    '確かめた回数とやり方は、報告に一行で書く。2026-11-18 に利用者が 3 回と決め、2026-11-19 に 10 回へ引き上げた。'];
   return want.filter((s) => !t.includes(s)).map((s) => s.slice(0, 24));
 });
 
@@ -511,7 +511,7 @@ brk(C(10), '台帳に無い日を書く', add('README.en.md', '\nSet up on 2026-
 brk(C(10), '年齢の線を一つの頁で変える', (F) => F.set('policies/privacy.md', F.get('policies/privacy.md').split('16 歳').join('15 歳')));
 brk(C(10), 'ORCID iD の数字を一つ変える', sub('verification/numbers.json', '"re": "0009-0000-1406-0547"', '"re": "0009-0000-1406-0548"'));
 brk(C(10), '記録に台帳に無い数を書く', add('docs/legal-review-2026-11-18.md', '\n照らした条は 21 条です。\n'));
-brk(C(10), '記録の回数を決めごとと変える', sub('CLAUDE.md', '**合っているかを、最低 3 回確かめる。**', '**合っているかを、最低 2 回確かめる。**'));
+brk(C(10), '記録の回数を決めごとと変える', sub('CLAUDE.md', '2026-11-18 に利用者が 3 回と決め', '2026-11-18 に利用者が 2 回と決め'));
 brk(C(9), '記録に記していない条を挙げる', add('docs/legal-review-2026-11-18.md', '\n- 民法第90条に当たるかどうか。\n'));
 brk(C(11), '料金の約束を弱める', sub('policies/terms.md', '運営者は、協力する人から料金を取りません。', '運営者は、協力する人から料金をほとんど取りません。'));
 brk(C(11), 'Claude を著者にしない文を外す', sub('policies/authorship.en.md', 'Claude is not an author.', 'Claude may be an author.'));
@@ -530,7 +530,7 @@ brk(C(14), '一つの段落にダッシュを二つ置く', add('TOPICS.md', '\n
 brk(C(15), 'アクションを版の名で呼ぶ', sub('.github/workflows/check.yml', 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1', 'actions/checkout@v7'));
 brk(C(15), 'ワークフローから権限を外す', sub('.github/workflows/statutes.yml', '\npermissions:\n  contents: read\n\njobs:', '\njobs:'));
 brk(C(15), 'package.json を置く', (F) => F.set('package.json', '{}'));
-brk(C(16), 'CLAUDE.md から決めごと 18 を外す', sub('CLAUDE.md', '**合っているかを、最低 3 回確かめる。**', '**合っているかを確かめる。**'));
+brk(C(16), 'CLAUDE.md から決めごと 18 を外す', sub('CLAUDE.md', '**合っているかを、最低 10 回確かめる。**', '**合っているかを確かめる。**'));
 
 /* ------------------------------------------------------------ 走らせる */
 
