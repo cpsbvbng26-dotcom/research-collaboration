@@ -9,11 +9,13 @@ body:
         扱いは名称と権利の「権利者の方へ」にあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/names.md
         この issue は公開されます。本名・住所・所属・連絡先は書かない形にしています。権利と、それがどこにあるかを、問題の素材そのものを書き写さずに書く形にしています。
         公開の場で出せない知らせは、削除・訂正・開示の求めの様式で、種類に「非公開の連絡を求める」を選んで出します。https://github.com/cpsbvbng26-dotcom/research-collaboration/issues/new?template=request.yml
+        issue を開かずに、削除・訂正・開示の求めの「公開できない求め」にあるメールの宛先へ送ることもできます。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/requests.md
         書いたものは、この知らせに応じることにだけ使います。扱いは個人情報の取り扱いにあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.md
         費用はかかりません。
         The handling is under "To rights holders" in Names and rights. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/names.en.md
         This issue is public. The form asks that no real name, address, affiliation or contact details be written. It asks for the right and where the material is, without copying the material itself.
         A notice that cannot be given in public is made through the request form, with the kind "Ask for a private answer". https://github.com/cpsbvbng26-dotcom/research-collaboration/issues/new?template=request.yml
+        It can also be sent, without opening an issue, to the email address under "Requests that cannot be made in public" in Requests. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/requests.en.md
         What is written is used only to answer this notice. The handling is in Personal data. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.en.md
         There is no fee.
   - type: dropdown
