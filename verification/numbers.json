@@ -5,7 +5,8 @@
     "fixed は、決めた値。それぞれ、値を確かめる所（check）を持つ。rule は、cpsbvbng26-dotcom の CLAUDE.md の決めごとの番号と、その初めの文。cpsbvbng26-dotcom の check_ecosystem.js が、その番号の決めごとがその文で始まることを照らす。"
   ],
   "dates": {
-    "2026-11-18": "このリポジトリを置き、条文を取り寄せた日。予想の (a) と (b) を証明した日（trinity-operator の OPEN-PROBLEM.md）"
+    "2026-11-18": "このリポジトリを置き、条文を取り寄せた日。予想の (a) と (b) を証明した日（trinity-operator の OPEN-PROBLEM.md）",
+    "2026-11-19": "2026-11-19 の読むだけの法令の点検を受けて規程を直した日。GitHub の API で、このリポジトリの非公開の脆弱性報告が有効でない（enabled: false）ことを確かめた日"
   },
   "fixed": [
     {

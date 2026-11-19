@@ -507,7 +507,7 @@ brk(C(9), '記していない条を挙げる', add('policies/terms.md', '\n民�
 brk(C(9), '英語の頁に記していない条を挙げる', add('policies/terms.en.md', '\nArticle 709 of the Civil Code applies.\n'));
 brk(C(10), '台帳に無い数を書く', add('policies/terms.md', '\n申し出は 3 件まで受けます。\n'));
 brk(C(10), '漢字の数を書く', add('TOPICS.md', '\n主題は五つあります。\n'));
-brk(C(10), '台帳に無い日を書く', add('README.en.md', '\nSet up on 2026-11-19.\n'));
+brk(C(10), '台帳に無い日を書く', add('README.en.md', '\nSet up on 2026-11-20.\n'));
 brk(C(10), '年齢の線を一つの頁で変える', (F) => F.set('policies/privacy.md', F.get('policies/privacy.md').split('16 歳').join('15 歳')));
 brk(C(10), 'ORCID iD の数字を一つ変える', sub('verification/numbers.json', '"re": "0009-0000-1406-0547"', '"re": "0009-0000-1406-0548"'));
 brk(C(10), '記録に台帳に無い数を書く', add('docs/legal-review-2026-11-18.md', '\n照らした条は 21 条です。\n'));
@@ -519,7 +519,7 @@ brk(C(12), '規程の頁へのリンクを壊す', sub('README.md', '(./policies
 brk(C(12), '様式の名を壊す', sub('policies/names.md', 'template=rights.yml', 'template=right.yml'));
 brk(C(12), '求めの種類を一つ様式から外す', sub(FORMS[1], '        - 運営者の住所を知ること / The operator\'s address\n', ''));
 brk(C(12), '主題を一つ変える', sub('TOPICS.en.md', '## Review as research software', '## Software review'));
-brk(C(13), '英語の頁の最終更新の日をずらす', sub('policies/conduct.en.md', 'Last updated: 2026-11-18.', 'Last updated: 2026-11-17.'));
+brk(C(13), '英語の頁の最終更新の日をずらす', sub('policies/conduct.en.md', 'Last updated: 2026-11-19.', 'Last updated: 2026-11-18.'));
 brk(C(13), '英語の頁から節を一つ消す', sub('policies/names.en.md', '## Other people\'s names', 'Other people\'s names'));
 brk(C(13), '英語の頁から条を一つ消す', sub('policies/privacy.en.md', 'under Article 28 of the Act on the Protection of Personal Information', 'under the Act on the Protection of Personal Information'));
 brk(C(14), 'である調の文を足す', add('policies/conduct.md', '\n運営者は、すべての知らせを読む。\n'));
