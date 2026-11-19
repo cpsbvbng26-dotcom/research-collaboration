@@ -1,0 +1,21 @@
+{
+  "title": "research-collaboration: the entrance for proposals of research collaboration, with its terms, forms and checks",
+  "description": "<p>The entrance through which the operator looks for people to carry out research together. Proposals are received through GitHub issue forms. No fee is charged, no consideration is paid, and the collaboration is not employment. The repository holds the terms of collaboration, authorship and the disclosure of the use of language models, licences, the handling of personal data, conduct, the disclaimer, requests for removal, correction or disclosure, names and rights, an overview of the Japanese statutes that bear on these, the issue forms, and the checks that compare every quoted statute with the text fetched from the e-Gov law API.</p><p>共同研究の相手を募る入口です。申し出は GitHub の issue の様式で受けます。協力の条件、著者と貢献、ライセンス、個人情報の取り扱い、行動の決まり、免責事項、求め、名称と権利、法令の整理と、それを確かめる検査を置いています。</p>",
+  "upload_type": "other",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "jpn",
+  "creators": [
+    {
+      "name": "Nemoto, Takuya",
+      "orcid": "0009-0000-1406-0547"
+    }
+  ],
+  "keywords": [
+    "research integrity",
+    "open access",
+    "scholarly communication",
+    "research collaboration"
+  ],
+  "notes": "Claude Code (Anthropic) was used to write the policies, the forms, the tools and the checks, at the operator's request. The operator decided the terms and reviewed the text. The author is responsible for the content. Claude is not an author. The policies, the forms and the text are CC BY 4.0 (LICENSE); the tools and the check scripts are MIT (LICENSE-CODE). The licence field of this record covers the policies, the forms and the text only. Texts by others that this repository quotes, or keeps to verify its quotations, are not licensed under CC BY 4.0 or the MIT License and remain their owners'."
+}
