@@ -473,6 +473,21 @@ check('CLAUDE.md が、決めごと 16・17・18 に当たる文を持つ', (F) 
   return want.filter((s) => !t.includes(s)).map((s) => s.slice(0, 24));
 });
 
+/* Zenodo の GitHub の連携は、Release のときに .zenodo.json を読んで記録を作る。著者は ORCID iD つきの一人で所属を書かず、
+ * ライセンスは LICENSE と同じ。notes は開示の段で始まり、どこが CC BY 4.0 でどこが MIT か、license の欄がどこに掛かるかを書く。 */
+check('.zenodo.json：著者は ORCID iD つきの一人で所属なし、ライセンスは LICENSE と同じ、notes に開示と license の欄の範囲', (F) => {
+  const z = json(F, '.zenodo.json');
+  if (!z) return ['.zenodo.json が読めない'];
+  const bad = [];
+  if (JSON.stringify(z.creators) !== JSON.stringify([{ name: 'Nemoto, Takuya', orcid: '0009-0000-1406-0547' }])) bad.push('著者');
+  if (z.license !== ((F.get('LICENSE') || '').startsWith('Creative Commons Attribution 4.0') ? 'cc-by-4.0' : '?')) bad.push('ライセンス');
+  const n = String(z.notes || '');
+  if (!n.startsWith('Claude Code (Anthropic) was used ') || !n.includes('The author is responsible for the content. Claude is not an author.')) bad.push('notes の開示');
+  if (!/The licence field of this record covers .+? only\./.test(n) || !n.includes('CC BY 4.0 (LICENSE)') || !n.includes('MIT (LICENSE-CODE)')) bad.push('notes の license の欄の範囲');
+  if (!String(z.title || '').startsWith('research-collaboration: ') || z.upload_type !== 'other' || z.access_right !== 'open') bad.push('題・種類・公開');
+  return bad;
+});
+
 /* ------------------------------------------------------------ 壊し方 */
 
 const BREAKS = [];
@@ -531,6 +546,10 @@ brk(C(15), 'アクションを版の名で呼ぶ', sub('.github/workflows/check.
 brk(C(15), 'ワークフローから権限を外す', sub('.github/workflows/statutes.yml', '\npermissions:\n  contents: read\n\njobs:', '\njobs:'));
 brk(C(15), 'package.json を置く', (F) => F.set('package.json', '{}'));
 brk(C(16), 'CLAUDE.md から決めごと 18 を外す', sub('CLAUDE.md', '**合っているかを、最低 10 回確かめる。**', '**合っているかを確かめる。**'));
+
+brk(C(17), '.zenodo.json から開示を外す', sub('.zenodo.json', 'Claude is not an author.', 'Claude helped.'));
+brk(C(17), '.zenodo.json に所属を足す', sub('.zenodo.json', '"orcid": "0009-0000-1406-0547"', '"orcid": "0009-0000-1406-0547", "affiliation": "x"'));
+brk(C(17), '.zenodo.json のライセンスを MIT にする', sub('.zenodo.json', '"license": "cc-by-4.0"', '"license": "mit"'));
 
 /* ------------------------------------------------------------ 走らせる */
 
