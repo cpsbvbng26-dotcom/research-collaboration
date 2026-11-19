@@ -330,6 +330,15 @@ check('散文の数は、どれも台帳に載り、それぞれの照らし方�
     if (x.check === 'licence' && !(F.get('LICENSE') || '').startsWith('Creative Commons Attribution 4.0 International')) bad.push('LICENSE の版');
     if (x.check === 'orcid' && !ORCID_OK(x.re)) bad.push('ORCID iD の検査の数字');
     if (x.check === 'rule18' && !(F.get('CLAUDE.md') || '').includes('2026-11-18 に利用者が 3 回と決め')) bad.push('3 回が CLAUDE.md の決めごとの記録（2026-11-18 の回数）と違う');
+    if (x.check === 'rule18-now' && !(F.get('CLAUDE.md') || '').includes('**合っているかを、最低 10 回確かめる。**')) bad.push('10 回が CLAUDE.md の決めごとと違う');
+    if (x.check === 'methods') {
+      /* 記録の 2026-11-19 の節が名乗る、確かめたやり方の数。続く箇条の数と同じで、決めごとの回数を下らないこと。 */
+      const m = /次の (\d+) のやり方で確かめました。\n\n((?:- [^\n]*\n)+)/.exec(F.get('docs/legal-review-2026-11-18.md') || '');
+      const 箇条 = m ? m[2].trim().split('\n').length : -1;
+      const 決め = Number((/\*\*合っているかを、最低 (\d+) 回確かめる。\*\*/.exec(F.get('CLAUDE.md') || '') || [])[1]);
+      if (!m || Number(m[1]) !== 箇条) bad.push('記録の確かめたやり方の数が、箇条の数と違う');
+      if (!(箇条 >= 決め)) bad.push('記録の確かめたやり方が、決めごとの回数に満たない');
+    }
   }
   if (!/^\*\*/.test(N.rule.begins) || N.rule.number !== Number(N.rule.re.replace(/\D/g, ''))) bad.push('決めごとの番号と文');
   if (!(F.get('verification/statutes.json') || '').includes('"fetched": "' + Object.keys(N.dates)[0] + '"')) bad.push('取り寄せた日が台帳の日と違う');
@@ -512,6 +521,9 @@ brk(C(10), '年齢の線を一つの頁で変える', (F) => F.set('policies/pri
 brk(C(10), 'ORCID iD の数字を一つ変える', sub('verification/numbers.json', '"re": "0009-0000-1406-0547"', '"re": "0009-0000-1406-0548"'));
 brk(C(10), '記録に台帳に無い数を書く', add('docs/legal-review-2026-11-18.md', '\n照らした条は 21 条です。\n'));
 brk(C(10), '記録の回数を決めごとと変える', sub('CLAUDE.md', '2026-11-18 に利用者が 3 回と決め', '2026-11-18 に利用者が 2 回と決め'));
+brk(C(10), '決めごとの今の回数を変える', sub('CLAUDE.md', '**合っているかを、最低 10 回確かめる。**', '**合っているかを、最低 9 回確かめる。**'));
+brk(C(10), '記録の確かめたやり方を一つ外す', sub('docs/legal-review-2026-11-18.md', '- 日本語と英語の頁を並べて読み直しました。\n', ''));
+brk(C(10), '記録の確かめたやり方を決めごとの回数より少なくする', (F) => F.set('docs/legal-review-2026-11-18.md', F.get('docs/legal-review-2026-11-18.md').replace('次の 11 のやり方で確かめました。', '次の 3 のやり方で確かめました。').replace(/(次の 3 のやり方で確かめました。\n\n)((?:- [^\n]*\n)+)/, (a, h, l) => h + l.split('\n').slice(0, 3).join('\n') + '\n')));
 brk(C(9), '記録に記していない条を挙げる', add('docs/legal-review-2026-11-18.md', '\n- 民法第90条に当たるかどうか。\n'));
 brk(C(11), '料金の約束を弱める', sub('policies/terms.md', '運営者は、協力する人から料金を取りません。', '運営者は、協力する人から料金をほとんど取りません。'));
 brk(C(11), 'Claude を著者にしない文を外す', sub('policies/authorship.en.md', 'Claude is not an author.', 'Claude may be an author.'));
