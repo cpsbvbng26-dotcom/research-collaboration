@@ -56,7 +56,7 @@
     ],
     "policies/privacy.en.md": [
       "It does not ask for a real name, an address, an affiliation or contact details.",
-      "The box is optional.",
+      "In these forms, the box is optional.",
       "Comments on issues are not given to a language model.",
       "No proposal is accepted from a person under 16 years of age.",
       "The operator gives personal data to no other third party."

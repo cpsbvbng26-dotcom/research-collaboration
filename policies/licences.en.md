@@ -1,6 +1,6 @@
 # Licences
 
-Last updated: 2026-11-18.
+Last updated: 2026-11-19.
 
 ## This repository
 
@@ -29,6 +29,9 @@ When a contribution contains another person's text or code, the form asks for it
 The CC BY 4.0 [LICENSE](../LICENSE) describes the grant as 「a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license」.
 The same document also states 「Our licenses are irrevocable.」
 What has already been published stays under its licence after a collaboration stops.
+Whether a grant can be undone when the contributor is under 18 years of age is not concluded on this page.
+A proposal from such a person is accepted only with the consent of a legal representative (such as a person with parental authority).
+The article concerned (Article 5 of the Civil Code) and the point left open are under "Civil Code" in [Reading of the law](./law.en.md).
 
 ## No DCO
 

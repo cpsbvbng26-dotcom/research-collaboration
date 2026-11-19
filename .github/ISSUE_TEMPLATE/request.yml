@@ -7,11 +7,11 @@ body:
     attributes:
       value: |
         この issue は公開されます。問題の個人情報そのものは書き写さず、どこにあるかだけを書く形にしています。
-        公開の場で書けない事情があるときは、種類で「非公開の連絡を求める」を選び、ほかの欄は空のまま出します。運営者が非公開で答えるのは、自分の GitHub のプロフィールに連絡先を公開している人にだけです。連絡先が無い人も、自分のプロフィールに連絡先を一時的に公開すれば、そこで答えを受け取れます。公開しないときは、個人の事柄を書かずに、この issue で答えます。
+        公開の場で書けない事情があるときは、issue を開かずに、運営者の免責事項にあるメールの宛先で求めることもできます。https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.md 自分の連絡先を公開する必要はありません。この様式で種類に「非公開の連絡を求める」を選び、ほかの欄を空のまま出すこともできます。そのとき、自分の GitHub のプロフィールに連絡先を公開している人には、運営者がそこへ非公開で答えます。そうでない人には、個人の事柄を書かずに、この issue でメールの宛先のある免責事項を示します。
         書いたものは、この求めに応じることにだけ使います。扱いは個人情報の取り扱いにあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.md
         費用はかかりません。手順は削除・訂正・開示の求めにあります。https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/requests.md
         This issue is public. The form asks that the personal data itself not be copied, only where it is.
-        When there is a reason not to write in public, the kind "Ask for a private answer" is chosen and the other fields are left empty. The operator answers privately only to a contact made public on the requester's own GitHub profile. A person with no such contact can receive the answer by making a contact public on their own profile for a while. Otherwise, the answer is given in this issue, without personal details.
+        When there is a reason not to write in public, a request can also be sent by email, without opening an issue, to the address in the operator's disclaimer. https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.en.md No contact needs to be made public. The kind "Ask for a private answer" can also be chosen in this form, with the other fields left empty. The operator then answers privately to a contact made public on the requester's own GitHub profile. Without one, the answer in this issue points to the disclaimer that gives the email address, without personal details.
         What is written is used only to answer this request. The handling is in Personal data. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/privacy.en.md
         There is no fee. The procedure is in Requests. https://github.com/cpsbvbng26-dotcom/research-collaboration/blob/main/policies/requests.en.md
   - type: dropdown

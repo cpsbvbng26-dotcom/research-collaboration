@@ -1,6 +1,6 @@
 # Code of conduct
 
-Last updated: 2026-11-18.
+Last updated: 2026-11-19.
 
 This code applies to the issues and pull requests of this repository, and to every place of a collaboration started here.
 It applies to the operator as well.
@@ -27,6 +27,7 @@ It applies to the operator as well.
 Conduct against this code can be reported through the [request form](https://github.com/cpsbvbng26-dotcom/research-collaboration/issues/new?template=request.yml).
 When it cannot be written in public, the kind "Ask for a private answer" is chosen in that form.
 The procedure is under "Requests that cannot be made in public" in [Requests](./requests.en.md).
+That section also gives the email route, without opening an issue.
 
 ## What the operator does
 

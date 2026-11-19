@@ -5,7 +5,8 @@
     "fixed は、決めた値。それぞれ、値を確かめる所（check）を持つ。rule は、cpsbvbng26-dotcom の CLAUDE.md の決めごとの番号と、その初めの文。cpsbvbng26-dotcom の check_ecosystem.js が、その番号の決めごとがその文で始まることを照らす。"
   ],
   "dates": {
-    "2026-11-18": "このリポジトリを置き、条文を取り寄せた日。予想の (a) と (b) を証明した日（trinity-operator の OPEN-PROBLEM.md）"
+    "2026-11-18": "このリポジトリを置き、条文を取り寄せた日。予想の (a) と (b) を証明した日（trinity-operator の OPEN-PROBLEM.md）",
+    "2026-11-19": "2026-11-19 の読むだけの法令の点検を受けて規程を直した日。GitHub の API で、このリポジトリの非公開の脆弱性報告が有効でない（enabled: false）ことを確かめた日"
   },
   "fixed": [
     {
@@ -43,6 +44,18 @@
       "en": "3 times",
       "check": "rule18",
       "why": "CLAUDE.md の決めごと 14（cpsbvbng26-dotcom の決めごと 18）の記録にある、2026-11-18 に決めた確かめる回数（2026-11-19 に 10 回へ引き上げた）"
+    },
+    {
+      "re": "10 回",
+      "en": "10 times",
+      "check": "rule18-now",
+      "why": "CLAUDE.md の決めごと 14（cpsbvbng26-dotcom の決めごと 18）が 2026-11-19 から求める、確かめる回数"
+    },
+    {
+      "re": "11 のやり方",
+      "en": "11 methods",
+      "check": "methods",
+      "why": "記録の 2026-11-19 の節が挙げる、確かめたやり方の数。その節の箇条の数と照らす"
     }
   ],
   "rule": {

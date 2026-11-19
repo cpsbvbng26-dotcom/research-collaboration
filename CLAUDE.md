@@ -9,8 +9,10 @@
    `verification/statutes.json` か、e-Gov 法令 API の法令の一覧から取る。取り寄せは `node tools/statutes.js --record`。
    引いた句は `verification/check.js` が取り寄せた文と一字ずつ照らす。結論を出していないところは、出していないと書く。
    労働法・未成年・共同著作物について、記憶から結論を書かない。
-2. **新しい連絡先を作らない。メールアドレスを書かない**。窓口は issue の様式だけ。非公開の連絡は、求めの様式の
-   「非公開の連絡を求める」（求めた人が自分の GitHub のプロフィールに公開した連絡先へ答える）だけ。
+2. **新しい連絡先を作らない。メールアドレスを書かない**。求めは、issue の様式と、cpsbvbng26-dotcom の免責事項
+   （`DISCLAIMER.md`）にある既存のメールの宛先で受ける。その宛先はここには書かない。このリポジトリのために新しい連絡先は作らない。
+   非公開の連絡は、その宛先へのメールか、求めの様式の「非公開の連絡を求める」（求めた人が自分の GitHub のプロフィールに
+   公開した連絡先へ答える）で受ける。規程の側は `policies/requests.md` の「求め方」と「公開できない求め」にある。
    `SECURITY.md`・`.github/ISSUE_TEMPLATE/error-report.yml`・`.github/checked-intake/verify.js`・
    `.github/workflows/checked-intake.yml` は cpsbvbng26-dotcom の正本の一字一句同じ写しで、ここでは直さない。
    正本を直して写す。写しの sha256 は `verification/copies.json` にあり、検査が照らす。

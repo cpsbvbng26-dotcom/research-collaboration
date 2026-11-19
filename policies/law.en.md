@@ -1,6 +1,6 @@
 # Reading of the law
 
-Last updated: 2026-11-18.
+Last updated: 2026-11-19.
 
 This page sets out how the operator reads the law.
 It is not legal advice and gives no guarantee.
@@ -46,6 +46,7 @@ If it is written, the operator removes that part from the issue.
 Article 26(1) provides that, when a situation set by the Commission's rules arises, such as a leak of personal data, the business operator 「当該事態が生じた旨を個人情報保護委員会に報告しなければならない。」
 Article 26(2) provides that, in the same case, it 「本人に対し、個人情報保護委員会規則で定めるところにより、当該事態が生じた旨を通知しなければならない。」
 When such a situation arises, the operator reports it to the Commission and tells the person in the issue that person opened.
+For something that arrived by email, the person is told at the email address it came from.
 The articles of the Commission's rules have not been fetched, so this page draws no conclusion on which situations they cover.
 
 ### Provision to third parties
@@ -103,8 +104,9 @@ Article 4 provides: 「年齢十八歳をもって、成年とする。」
 Article 5(1) provides: 「未成年者が法律行為をするには、その法定代理人の同意を得なければならない。」
 Article 5(2) provides: 「前項の規定に反する法律行為は、取り消すことができる。」
 This page draws no conclusion on which acts in a collaboration are juristic acts.
+Nor does it conclude whether, when a contributor is under 18 years of age, the grant of what the contributor gave can be undone under Article 5(2).
 The operator accepts no proposal from a person under 16 years of age.
-A proposal from a person under 18 years of age is accepted only with the consent of a parent or guardian.
+A proposal from a person under 18 years of age is accepted only with the consent of a legal representative (such as a person with parental authority).
 
 ## Labour Standards Act and Labour Contracts Act
 
