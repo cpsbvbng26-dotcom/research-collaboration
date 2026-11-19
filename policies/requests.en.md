@@ -1,6 +1,6 @@
 # Requests
 
-Last updated: 2026-11-18.
+Last updated: 2026-11-19.
 
 ## What can be requested
 
@@ -24,21 +24,28 @@ Japanese and English are both accepted.
 A request is made by opening an issue with the [request form](https://github.com/cpsbvbng26-dotcom/research-collaboration/issues/new?template=request.yml).
 It states which entry is concerned and what is asked.
 The form asks that the personal data itself not be copied, only where it is.
-The GitHub form is the only channel for requests.
+Requests are also received, besides this form, at the email address in the operator's [Disclaimer](https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.en.md#information).
+That address is the existing one used in the operator's other repositories, and was not created for this one.
 No new contact details were created for this repository.
 An agent may make a request.
 In that case, the form asks for one line from the person's own GitHub account saying that the agent acts for them.
 
 ## Requests that cannot be made in public
 
-When there is a reason not to write in public, the kind "Ask for a private answer" is chosen in the form and the other fields are left empty.
+When there is a reason not to write in public, a request can be sent to the email address of the Disclaimer, without opening an issue.
+The operator answers that email privately.
+The requester does not need to make any contact public.
+A request for the operator's address is also received there and answered without delay.
+The kind "Ask for a private answer" can also be chosen in the form, with the other fields left empty.
 The issue then shows only the GitHub account name, the title and the kind.
-The operator answers privately only when the requester has made a contact public on their own GitHub profile, and answers to that contact.
-A person without such a contact can receive the answer by making a contact public on their own profile for a while.
-Otherwise, the answer is given in the issue, without personal details.
-A request for the operator's address follows the same route.
+When the requester has made a contact public on their own GitHub profile, the operator answers privately to that contact.
+Without such a contact, the answer in the issue points to the Disclaimer that gives the email address, without personal details.
 How to report a security issue is in [SECURITY.md](../SECURITY.md).
 That route is the same as in the operator's other repositories, and was not created for this one.
+SECURITY.md is a word-for-word copy of the one in the operator's other repositories.
+The "disclaimer" it names is the operator's Disclaimer, not this repository's [Disclaimer](./disclaimer.en.md).
+The date of the check that it states is the day of the check in the repository it was copied from.
+On 2026-11-19, GitHub's API showed that private vulnerability reporting is not enabled for this repository either.
 
 ## After a request
 

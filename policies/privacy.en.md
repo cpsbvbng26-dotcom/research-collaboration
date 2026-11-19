@@ -1,6 +1,6 @@
 # Personal data
 
-Last updated: 2026-11-18.
+Last updated: 2026-11-19.
 
 ## Who handles it
 
@@ -12,8 +12,9 @@ The reading of the law is under "Act on the Protection of Personal Information" 
 
 ## What is collected
 
-This repository handles only what is written in its GitHub issue forms.
-It handles the GitHub account name and what is written in a form.
+This repository handles what is written in its GitHub issue forms, and requests and reports received at the email address of the operator's [Disclaimer](https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.en.md#information).
+In an issue, it handles the GitHub account name and what is written in a form.
+By email, it handles the sender's email address and what the email says.
 It does not ask for a real name, an address, an affiliation or contact details.
 It does not ask for special care-required personal information, such as medical history or the state of a person's body or mind.
 The forms ask that these not be written.
@@ -28,6 +29,8 @@ GitHub handles the records of visits to its pages under its own statement.
 - To handle error reports and notices from rights holders.
 
 The operator uses the data for no other purpose.
+What arrives at the email address is used for the same purposes only.
+The section "Information" of the operator's Disclaimer also applies to issues opened with the error report form and to requests received by email.
 The forms made for this repository state these purposes before their first field.
 
 ## What is public
@@ -48,9 +51,14 @@ The operator treats this as a provision to a third party in a foreign country un
 The English sentence of the consent box is "I consent to the operator giving the title and text of this issue to Claude (Anthropic, United States)."
 The system of the United States and Anthropic's measures are in the section "Issues and the language model" of the operator's [disclaimer](https://github.com/cpsbvbng26-dotcom/cpsbvbng26-dotcom/blob/main/DISCLAIMER.en.md).
 That section quotes the page of the Personal Information Protection Commission and Anthropic's privacy policy.
-The box is optional.
+The proposal, request and rights-holder forms were made for this repository.
+In these forms, the box is optional.
 An issue without the tick is handled by the operator without giving it to Claude or any other language model.
+The error report form is a word-for-word copy of the form in the operator's other repositories.
+In that form, the consent box is required.
+That form says that, without consent, the error can be reported by email instead, to the address the Disclaimer gives.
 Comments on issues are not given to a language model.
+The content of an email is not given to a language model either.
 The consent can be withdrawn at any time in the issue.
 After a withdrawal, the issue is not given to a language model.
 Issues opened by the operator are outside this rule.
@@ -74,7 +82,9 @@ Removing an issue does not necessarily remove copies already delivered as notice
 
 ## Security measures
 
-The operator does not gather what is written in issues anywhere else, and makes no copies of it.
+The operator does not gather what is written in issues anywhere else.
+Apart from giving the title and text of an issue with consent to Claude, the operator makes no copies of it.
+Copies delivered by GitHub's notices are as set out in "How long it is kept" above.
 Only the operator's GitHub account can change this repository.
 Every change stays in the public history.
 
@@ -90,7 +100,8 @@ The reading of the law is under "When a leak or the like occurs" in [Reading of 
 Anyone may ask for correction, removal, disclosure or a stop to the use of an entry about themselves.
 There is no fee.
 The procedure is in [Requests](./requests.en.md).
-Complaints about the handling of personal data are received through the same form.
+Requests are also received at the email address of the Disclaimer, besides the form.
+Complaints about the handling of personal data are received through the same form or at the same email address.
 
 ## Age
 
