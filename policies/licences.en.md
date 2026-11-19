@@ -30,7 +30,7 @@ The CC BY 4.0 [LICENSE](../LICENSE) describes the grant as 「a worldwide, royal
 The same document also states 「Our licenses are irrevocable.」
 What has already been published stays under its licence after a collaboration stops.
 Whether a grant can be undone when the contributor is under 18 years of age is not concluded on this page.
-A proposal from such a person is accepted only with the consent of a parent or guardian.
+A proposal from such a person is accepted only with the consent of a legal representative (such as a person with parental authority).
 The article concerned (Article 5 of the Civil Code) and the point left open are under "Civil Code" in [Reading of the law](./law.en.md).
 
 ## No DCO

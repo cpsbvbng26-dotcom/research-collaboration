@@ -59,7 +59,7 @@ In that form, the consent box is required.
 That form says that, without consent, the error can be reported by email instead, to the address the Disclaimer gives.
 Comments on issues are not given to a language model.
 The content of an email is not given to a language model either.
-The consent can be withdrawn at any time in the issue.
+The consent can be withdrawn at any time, in an issue or by email.
 After a withdrawal, the issue is not given to a language model.
 Issues opened by the operator are outside this rule.
 
@@ -92,6 +92,7 @@ Every change stays in the public history.
 
 When a leak of personal data or the like gives rise to a situation that the law requires to be reported, the operator reports it to the Personal Information Protection Commission.
 The person is told in the issue that person opened.
+For something that arrived by email, the person is told at the email address it came from.
 A takeover of the operator's GitHub account that changes issues is treated as such a situation.
 The reading of the law is under "When a leak or the like occurs" in [Reading of the law](./law.en.md).
 
