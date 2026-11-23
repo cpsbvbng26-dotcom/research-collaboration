@@ -1,6 +1,6 @@
 # Topics for collaboration
 
-Last updated: 2026-11-18.
+Last updated: 2026-11-24.
 
 The topics listed here are drawn only from facts written in the operator's other repositories.
 The source of each topic is given with it.
@@ -8,22 +8,28 @@ The [terms of collaboration](./policies/terms.en.md) apply to every topic.
 
 ## The golden-window conjecture and the literature
 
-In a note on repeated games, the operator has proved several propositions.
-Some of them have not yet been checked against the literature.
-They may be known exercises, and they are not counted as new results until they are checked.
-The environment in which the note was written cannot reach the literature databases.
-What is sought is a check against the literature on repeated games and on interval maps with holes.
-The source is [OPEN-PROBLEM.md in trinity-operator](https://github.com/cpsbvbng26-dotcom/trinity-operator/blob/main/games/OPEN-PROBLEM.md).
+The golden-window conjecture was resolved on 2026-11-18 in the resolution paper.
+The paper is on Figshare ([`10.6084/m9.figshare.35050300`](https://doi.org/10.6084/m9.figshare.35050300)).
+For each result, the paper separates what is known from what was not found in the texts read.
+Measure zero and the dimension formula are special cases of theorems of Lu, Steiner and Zou.
+The monotonicity, continuity and end limits along the curve, and Theorems A to D, were not found in the texts read.
+"Not found" refers only to the texts read.
+The paper says that the literature search was limited and that parts of these results may exist elsewhere.
+What is sought is a check of these results against the literature on repeated games and on β-transformations with a hole.
+The sources are "What is known and what is new" in the [README of golden-window-resolution](https://github.com/cpsbvbng26-dotcom/golden-window-resolution/blob/main/README.en.md), and the paper above.
 
 ## Checking the proofs of the conjecture
 
-Parts (a) and (b) of the conjecture were proved on 2026-11-18.
-The proofs were written by Claude Code at the operator's request.
+The proofs in the resolution paper were written by Claude Code at the operator's request.
 The operator is responsible for them.
+The paper has not been peer reviewed.
+Theorem E is conditional on a continuity theorem of Lu, Steiner and Zou.
+The paper says that the proof of that theorem was read but not re-verified line by line.
 What is sought is a person who reads the proofs line by line and checks them.
 This is not peer review.
-The same page lists, as an open question, why the same polynomial gives a threshold twice (label `why 1/φ twice`).
-The source is the same [OPEN-PROBLEM.md](https://github.com/cpsbvbng26-dotcom/trinity-operator/blob/main/games/OPEN-PROBLEM.md).
+[OPEN-PROBLEM.md in trinity-operator](https://github.com/cpsbvbng26-dotcom/trinity-operator/blob/main/games/OPEN-PROBLEM.md) lists, as an open question, why the same polynomial gives a threshold twice (label `why 1/φ twice`).
+Theorem D of the resolution paper gives a structural identity behind this.
+The sources are the README above and OPEN-PROBLEM.md.
 
 ## The Trinity-Infinity papers
 
